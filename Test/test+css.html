@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Test1</title>
+		<link rel="stylesheet" href="test.css">
+	</head>
+
+	<body>
+
+		<div id="header">
+			<img src="baidulogo.png" />
+			<ul>
+				<li><a href="#a1">关于HTML5</a></li>
+				<li><a href="#a2">常用HTML标签的含义、用法</a></li>
+				<li><a href="#a3">HTML表格的应用</a></li>
+				<li><a href="#a4">HTML其他标签</a></li>
+			</ul>
+		</div>
+
+		<div id="a1">
+			<h2>关于HTML5</h2>
+			<h3>什么是HTML？</h3>
+			<p>HTML 是用来描述网页的一种语言。</p>
+			<ul>
+				<li>HTML指的是超文本标记语言（Hyper Text Markup Language）</li>
+				<li>HTML不是一种编程语言，而是一种标记语言(markup language)</li>
+				<li>标记语言是一套标记标签(markup tag)</li>
+				<li>HTML使用标记标签来描述网页</li>
+			</ul>
+			<hr/>
+
+			<h3>HTML标签</h3>
+			<p>HTML 标记标签通常被称为 HTML 标签 (HTML tag)。</p>
+			<ul>
+				<li>HTML 标签是由尖括号包围的关键词，比如
+					< html>
+				</li>
+				<li>HTML 标签通常是成对出现的，比如
+					< b> 和
+						< /b>
+				</li>
+				<li>标签对中的第一个标签是开始标签，第二个标签是结束标签</li>
+				<li>开始和结束标签也被称为开放标签和闭合标签</li>
+			</ul>
+			<hr/>
+
+			<h3>HTML文档=网页</h3>
+			<ul>
+				<li>HTML文档描述网页</li>
+				<li>HTML文档包含HTML标签和纯文本</li>
+				<li>HTML也被称为网页</li>
+			</ul>
+			<p>Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。浏览器不会显示 HTML 标签，而是使用标签来解释页面的内容：<br/>
+				<img src="eg1.png">
+			</p>
+		</div>
+
+		<div id="a2">
+			<h2>常用HTML标签的含义、用法</h2>
+			<h3>HTML标题</h3>
+			<p>HTML 标题（Heading）是通过
+				< h1> -
+					< h6> 等标签进行定义的。</p>
+			<h4>实例</h4>
+			<img src="eg2.png">
+			<hr/>
+
+			<h3>HTML段落</h3>
+			<p>HTML 段落是通过
+				< p> 标签进行定义的。</p>
+			<h4>实例</h4>
+			<img src="eg3 p.png">
+			<hr/>
+
+			<h3>HTML链接</h3>
+			<p>HTML 链接是通过
+				< a> 标签进行定义的。</p>
+			<h4>实例</h4>
+			<img src="eg4 a.png">
+			<hr/>
+
+			<h3>HTML图像</h3>
+			<p>HTML 图像是通过
+				< img> 标签进行定义的。</p>
+			<h4>实例</h4>
+			<img src="eg5 img.png">
+		</div>
+
+		<div id="a3">
+			<h3>HTML表格</h3>
+			<p>表格由
+				< table> 标签来定义。每个表格均有若干行（由
+					< tr> 标签定义），每行被分割为若干单元格（由
+						< td> 标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。</p>
+			<h4>实例</h4>
+			<table>
+				<caption>学生表</caption>
+				<tr>
+					<th>班级</th>
+					<th>姓名</th>
+					<th>性别</th>
+					<td rowspan="5"><a href="https://www.baidu.com">搜索</a></td>
+				</tr>
+
+				<tr>
+					<td>001</td>
+					<td>张三</td>
+					<td>男</td>
+				</tr>
+
+				<tr>
+					<td>002</td>
+					<td>李四</td>
+					<td>男</td>
+				</tr>
+
+				<tr>
+					<td>003</td>
+					<td>王五</td>
+					<td>男</td>
+				</tr>
+
+				<tr>
+					<td>总计</td>
+					<td>总计</td>
+					<td>总计</td>
+				</tr>
+			</table>
+			<ol>
+				<li><a href="#">文章一</a></li>
+				<li><a href="#">文章二</a></li>
+				<li><a href="#">文章三</a></li>
+			</ol>
+		</div>
+		<div class="register">
+			<aside>
+				<h2>这里是一个长长长的侧边标题栏</h2>
+			</aside>
+			<div class="item">
+				<div class="i_name">
+					<label for="email">请输入邮箱地址：</label>
+				</div>
+				<div class="i_input">
+					<input type="email" id="email" /><br/>
+                    <span>邮箱地址请按要求输入</span>
+				</div>
+			</div>
+			<div class="item">
+				<div class="i_name">
+					<label for="pws1">请输入密码：</label>
+				</div>
+				<div class="i_input">
+					<input type="password" id="pws1" /><br/>
+                    <span>密码为6-16位的英文数字</span>
+				</div>
+			</div>
+			<div class="item">
+				<div class="i_name">
+					<label for="pws2">请重复输入密码：</label>
+				</div>
+				<div class="i_input">
+					<input type="password" id="pws2" /><br/>
+                    <span>密码为6-16位的英文数字</span>
+				</div>
+			</div>
+			<div class="item">
+				<div class="i_name">
+					<label for="sex">性别：</label>
+				</div>
+				<div class="i_input">
+					<input type="radio" name="sex" checked/>男
+					<input type="radio" name="sex" />女
+				</div>
+			</div>
+			<div class="item">
+				<div class="i_name">
+					<label for="city">城市：</label>
+				</div>
+				<div class="i_input">
+					<select>
+                            <option>北京</option>
+                		    <option>上海</option>
+                		    <option>广州</option>
+                		    <option>深圳</option>
+                        </select>
+				</div>
+			</div>
+			<div class="item">
+				<div class="i_name">
+					<label> 爱好：</label>
+				</div>
+				<div class="i_input">
+					<input type="checkbox" />运动
+					<input type="checkbox" />艺术
+					<input type="checkbox" />科学
+				</div>
+			</div>
+			<div class="item">
+				<div class="i_name">
+					<label>个人描述：</label>
+				</div>
+				<div class="i_input">
+					<textarea rows="5" cols="20"></textarea>
+				</div>
+			</div>
+			<div class="item">
+				<div class="i_name">
+					<label></label>
+				</div>
+				<div class="i_submit">
+					<input type="button" value="确认">
+				</div>
+			</div>
+		</div>
+        <div id="footer">
+         <p>&copy;版权所有</p>
+        </div>
+	</body>
+
+</html>
